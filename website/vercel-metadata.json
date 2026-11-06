@@ -1,0 +1,75 @@
+{
+  "id": "prj_53xYwAvBDkRxOu4HG2o2I6HrCrva",
+  "name": "abix-ninebot-flasher",
+  "framework": null,
+  "accountId": "team_3fLM3iwixG1gwtoIxFo9ePAx",
+  "rootDirectory": null,
+  "buildCommand": "cd client && npm install && npm run build",
+  "devCommand": null,
+  "installCommand": null,
+  "outputDirectory": "client/dist",
+  "createdAt": 1793830439858,
+  "updatedAt": 1793913795453,
+  "git_link": {},
+  "production_target": {
+    "createdAt": 1793913782824,
+    "id": "dpl_9jTQNfSCLJK4YUPFcSj2NhK9HdNn",
+    "readyState": "READY",
+    "target": "production",
+    "url": "abix-ninebot-flasher-c19a9y8ck-ozislercinar5-9827s-projects.vercel.app"
+  },
+  "env_names": [],
+  "domains": [
+    {
+      "name": "abix-ninebot-flasher.vercel.app",
+      "redirect": null,
+      "gitBranch": null,
+      "customEnvironmentId": null,
+      "verified": true
+    }
+  ],
+  "production_deployments": [
+    {
+      "uid": "dpl_9jTQNfSCLJK4YUPFcSj2NhK9HdNn",
+      "name": "abix-ninebot-flasher",
+      "url": "abix-ninebot-flasher-c19a9y8ck-ozislercinar5-9827s-projects.vercel.app",
+      "created": 1793913782824,
+      "source": "cli",
+      "state": "READY",
+      "readyState": "READY",
+      "meta": {
+        "gitCommitRef": "master",
+        "gitCommitSha": "db9b55f3a436d5f10d97463a5a71e852bcc3ce83"
+      },
+      "target": "production"
+    },
+    {
+      "uid": "dpl_CFAT3kZaoyFjo5DjvxZyBiz4zoV7",
+      "name": "abix-ninebot-flasher",
+      "url": "abix-ninebot-flasher-pt60p1kw9-ozislercinar5-9827s-projects.vercel.app",
+      "created": 1793912921836,
+      "source": "cli",
+      "state": "READY",
+      "readyState": "READY",
+      "meta": {
+        "gitCommitRef": "master",
+        "gitCommitSha": "0ba4e035d0ed02f42fb0bec44f377060f60aba86"
+      },
+      "target": "production"
+    },
+    {
+      "uid": "dpl_BKXvYtimRHjFa3zSWKEFo5N5mTs3",
+      "name": "abix-ninebot-flasher",
+      "url": "abix-ninebot-flasher-d3ntlx7on-ozislercinar5-9827s-projects.vercel.app",
+      "created": 1793830444627,
+      "source": "cli",
+      "state": "READY",
+      "readyState": "READY",
+      "meta": {
+        "gitCommitRef": "master",
+        "gitCommitSha": "9558736bef18cbd3bd9a740cc3a2f752c0838289"
+      },
+      "target": "production"
+    }
+  ]
+}

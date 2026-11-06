@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "firmware": {
+    "displayName": "Under armour f3",
+    "model": "f3",
+    "enforceModel": true,
+    "type": "BLE",
+    "compatible": [
+      "f3_BLE"
+    ],
+    "encryption": "encrypted",
+    "md5": {
+      "enc": "756423718a8a45990657107e2505f607"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "envs": [
+    {
+      "key": "ADMIN_CREDENTIAL_HASH",
+      "type": "sensitive",
+      "target": [
+        "production",
+        "preview"
+      ]
+    },
+    {
+      "key": "KEY_SIGNING_SECRET",
+      "type": "sensitive",
+      "target": [
+        "production",
+        "preview"
+      ]
+    },
+    {
+      "key": "SESSION_SIGNING_SECRET",
+      "type": "sensitive",
+      "target": [
+        "production",
+        "preview"
+      ]
+    }
+  ],
+  "adminFileMode": "0o600"
+}

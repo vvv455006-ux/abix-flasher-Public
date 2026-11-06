@@ -1,0 +1,15 @@
+{
+  "health_real_flash_disabled": true,
+  "integrity_checked_firmware_catalog": 4,
+  "all_main_and_admin_assets_secret_free": true,
+  "assets_checked": 2,
+  "unauthenticated_admin_rejected": true,
+  "retired_admin_rejected": true,
+  "migrated_record_count": 28,
+  "admin_keys_are_masked": true,
+  "admin_logout_revokes_session": true,
+  "retired_master_revoked": true,
+  "migrated_access_and_durable_customer_session_work": true,
+  "delivery_gates_and_unchanged_credits": true,
+  "customer_logout_revokes_session": true
+}

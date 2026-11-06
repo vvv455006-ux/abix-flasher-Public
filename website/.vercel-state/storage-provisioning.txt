@@ -1,0 +1,6 @@
+Vercel CLI 65.11.0
+> Installing Neon by Neon under ozislercinar5-9827s-projects
+> Success! Neon successfully provisioned: abix-flasher-licences
+>     Guide: Run `vercel integration guide neon` for getting started guides and code snippets
+>     Dashboard: https://vercel.com/d/dashboard/integrations/neon/icfg_aAHxipWyUTbqgocwq2xrnE8s/resources/store_KJW8anSwiecGE4cx
+> abix-flasher-licences successfully connected to abix-ninebot-flasher

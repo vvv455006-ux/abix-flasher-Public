@@ -1,0 +1,42 @@
+{
+  "deployment_details": {
+    "id": "dpl_9jTQNfSCLJK4YUPFcSj2NhK9HdNn",
+    "url": "abix-ninebot-flasher-c19a9y8ck-ozislercinar5-9827s-projects.vercel.app",
+    "name": "abix-ninebot-flasher",
+    "target": "production",
+    "source": "cli",
+    "readyState": "READY",
+    "createdAt": 1793913782824,
+    "alias": [
+      "abix-ninebot-flasher.vercel.app",
+      "abix-ninebot-flasher-ozislercinar5-9827s-projects.vercel.app"
+    ],
+    "aliasAssigned": true,
+    "regions": [
+      "iad1"
+    ],
+    "projectSettings": {
+      "buildCommand": "cd client && npm install && npm run build",
+      "framework": null,
+      "installCommand": null,
+      "outputDirectory": "client/dist",
+      "nodeVersion": "26.x"
+    }
+  },
+  "aliases": {
+    "aliases": [
+      {
+        "uid": "753644289d209784f95048cd735ea198e6063c815370e5fb825334175593ae3bc44710c16963ffff2c09201507653e986cbec3b11aaf72d6e083d16a4e3a233c",
+        "alias": "abix-ninebot-flasher-ozislercinar5-9827s-projects.vercel.app",
+        "created": "2026-11-04T22:14:19.329Z",
+        "redirect": null
+      },
+      {
+        "uid": "6eeb938948402b691f672e350c215cd743d72f6291d43c157cb6859c92d11c484810a20c206856bf88f7dfbd622835386b5c139a9d16523ecfe4a221e6dac63f",
+        "alias": "abix-ninebot-flasher.vercel.app",
+        "created": "2026-11-04T22:14:19.329Z",
+        "redirect": null
+      }
+    ]
+  }
+}

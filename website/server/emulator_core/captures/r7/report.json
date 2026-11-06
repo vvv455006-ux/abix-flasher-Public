@@ -1,0 +1,112 @@
+{
+  "image": {
+    "file": "Star-CFW-v5.1-Visual-Repair-r7-TEST.zip",
+    "display_name": "Star CFW v5.1 Visual Repair r7 TEST",
+    "base": "G3 BLE 0.4.5",
+    "bytes": 2023392,
+    "sha256": "16f924a191d70c71b13c98e641944f8a022e78c0a90badcb2933300d3b469721"
+  },
+  "boot": {
+    "flushes": 6,
+    "rows": 320,
+    "fault": "",
+    "stopped": false,
+    "panel_ready": true
+  },
+  "scenes": {
+    "ride": {
+      "flushes": 8,
+      "rows": 320,
+      "fault": "",
+      "stopped": false,
+      "panel_ready": true,
+      "writes": {
+        "current_speed": 24,
+        "battery_total": 43,
+        "gear_mode": 5
+      },
+      "readback_before_advance": {
+        "current_speed": 24,
+        "battery_total": 43,
+        "gear_mode": 5
+      },
+      "new_flushes": 2,
+      "pixels_changed": 26834
+    },
+    "ride_next": {
+      "flushes": 8,
+      "rows": 320,
+      "fault": "",
+      "stopped": false,
+      "panel_ready": true,
+      "writes": {},
+      "readback_before_advance": {},
+      "new_flushes": 0,
+      "pixels_changed": 0
+    },
+    "sport": {
+      "flushes": 10,
+      "rows": 320,
+      "fault": "",
+      "stopped": false,
+      "panel_ready": true,
+      "writes": {
+        "gear_mode": 3
+      },
+      "readback_before_advance": {
+        "gear_mode": 3
+      },
+      "new_flushes": 2,
+      "pixels_changed": 19643
+    },
+    "park": {
+      "flushes": 10,
+      "rows": 320,
+      "fault": "",
+      "stopped": false,
+      "panel_ready": true,
+      "writes": {
+        "current_speed": 0,
+        "parking_state": 1
+      },
+      "readback_before_advance": {
+        "current_speed": 0,
+        "parking_state": 1
+      },
+      "new_flushes": 0,
+      "pixels_changed": 0
+    },
+    "low_battery": {
+      "flushes": 10,
+      "rows": 320,
+      "fault": "",
+      "stopped": false,
+      "panel_ready": true,
+      "writes": {
+        "parking_state": 0,
+        "battery_total": 8
+      },
+      "readback_before_advance": {
+        "parking_state": 0,
+        "battery_total": 8
+      },
+      "new_flushes": 0,
+      "pixels_changed": 0
+    },
+    "charging": {
+      "flushes": 10,
+      "rows": 320,
+      "fault": "",
+      "stopped": false,
+      "panel_ready": true,
+      "writes": {
+        "charging_status": 1
+      },
+      "readback_before_advance": {
+        "charging_status": 1
+      },
+      "new_flushes": 0,
+      "pixels_changed": 0
+    }
+  }
+}

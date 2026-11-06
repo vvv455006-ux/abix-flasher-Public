@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "firmware": {
+    "displayName": "StarCFW_v0.1_blackwave_G3",
+    "model": "g3",
+    "enforceModel": true,
+    "type": "BLE",
+    "compatible": [
+      "g3_BLE"
+    ],
+    "encryption": "encrypted",
+    "md5": {
+      "enc": "8a0e97ff59e3ae2c432511cb5e01fb95"
+    }
+  }
+}

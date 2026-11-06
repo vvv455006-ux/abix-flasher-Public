@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "firmware": {
+    "displayName": "Stone Island g3",
+    "model": "g3",
+    "enforceModel": true,
+    "type": "BLE",
+    "compatible": [
+      "g3_BLE"
+    ],
+    "encryption": "encrypted",
+    "md5": {
+      "enc": "79815dd4f14603f03769054d6d23fb27"
+    }
+  }
+}

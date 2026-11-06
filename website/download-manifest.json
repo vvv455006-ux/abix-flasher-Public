@@ -1,0 +1,630 @@
+[
+  {
+    "path": "README.md",
+    "bytes": 5724
+  },
+  {
+    "path": "Start-G3-Lab.cmd",
+    "bytes": 319
+  },
+  {
+    "path": "api/index.js",
+    "bytes": 57
+  },
+  {
+    "path": "client/.oxlintrc.json",
+    "bytes": 231
+  },
+  {
+    "path": "client/README.md",
+    "bytes": 1009
+  },
+  {
+    "path": "client/dist/assets/index-Bd5EyPIA.css",
+    "bytes": 53586
+  },
+  {
+    "path": "client/dist/assets/index-BuNu8AQk.js",
+    "bytes": 343728
+  },
+  {
+    "path": "client/dist/favicon.svg",
+    "bytes": 9522
+  },
+  {
+    "path": "client/dist/icons.svg",
+    "bytes": 5031
+  },
+  {
+    "path": "client/dist/index.html",
+    "bytes": 456
+  },
+  {
+    "path": "client/public/favicon.svg",
+    "bytes": 9522
+  },
+  {
+    "path": "client/public/icons.svg",
+    "bytes": 5031
+  },
+  {
+    "path": "client/index.html",
+    "bytes": 358
+  },
+  {
+    "path": "client/package-lock.json",
+    "bytes": 56045
+  },
+  {
+    "path": "client/package.json",
+    "bytes": 584
+  },
+  {
+    "path": "client/src/App.css",
+    "bytes": 2891
+  },
+  {
+    "path": "client/src/App.jsx",
+    "bytes": 5244
+  },
+  {
+    "path": "client/src/assets/hero.png",
+    "bytes": 13057
+  },
+  {
+    "path": "client/src/assets/react.svg",
+    "bytes": 4126
+  },
+  {
+    "path": "client/src/assets/vite.svg",
+    "bytes": 8709
+  },
+  {
+    "path": "client/src/components/AdminPortal.jsx",
+    "bytes": 40314
+  },
+  {
+    "path": "client/src/components/AdminStudio.jsx",
+    "bytes": 16949
+  },
+  {
+    "path": "client/src/components/AntiInspectShield.jsx",
+    "bytes": 7189
+  },
+  {
+    "path": "client/src/components/FlasherWizard.jsx",
+    "bytes": 34687
+  },
+  {
+    "path": "client/src/components/KeyLoginGate.jsx",
+    "bytes": 6189
+  },
+  {
+    "path": "client/src/components/LicenseChecker.jsx",
+    "bytes": 6656
+  },
+  {
+    "path": "client/src/components/Navbar.jsx",
+    "bytes": 6750
+  },
+  {
+    "path": "client/src/components/ScooterHudPreview.jsx",
+    "bytes": 34770
+  },
+  {
+    "path": "client/src/index.css",
+    "bytes": 2841
+  },
+  {
+    "path": "client/src/main.jsx",
+    "bytes": 229
+  },
+  {
+    "path": "client/src/services/ninebotBleService.js",
+    "bytes": 26062
+  },
+  {
+    "path": "client/src/services/soundEffects.js",
+    "bytes": 7253
+  },
+  {
+    "path": "client/vite.config.js",
+    "bytes": 379
+  },
+  {
+    "path": "package-lock.json",
+    "bytes": 42790
+  },
+  {
+    "path": "package.json",
+    "bytes": 620
+  },
+  {
+    "path": "project_export.json",
+    "bytes": 17182
+  },
+  {
+    "path": "server/app.js",
+    "bytes": 13770
+  },
+  {
+    "path": "server/data_store.json",
+    "bytes": 28972
+  },
+  {
+    "path": "server/db.js",
+    "bytes": 11968
+  },
+  {
+    "path": "server/emulator_core/README.txt",
+    "bytes": 2256
+  },
+  {
+    "path": "server/emulator_core/ble_lab.py",
+    "bytes": 11204
+  },
+  {
+    "path": "server/emulator_core/captures/blackwave-active/boot.png",
+    "bytes": 22730
+  },
+  {
+    "path": "server/emulator_core/captures/blackwave-active/charging.png",
+    "bytes": 19172
+  },
+  {
+    "path": "server/emulator_core/captures/blackwave-active/first-panel-frame.png",
+    "bytes": 17373
+  },
+  {
+    "path": "server/emulator_core/captures/blackwave-active/low_battery.png",
+    "bytes": 25824
+  },
+  {
+    "path": "server/emulator_core/captures/blackwave-active/park.png",
+    "bytes": 18871
+  },
+  {
+    "path": "server/emulator_core/captures/blackwave-active/report.json",
+    "bytes": 3744
+  },
+  {
+    "path": "server/emulator_core/captures/blackwave-active/ride.png",
+    "bytes": 23686
+  },
+  {
+    "path": "server/emulator_core/captures/blackwave-active/ride_next.png",
+    "bytes": 18208
+  },
+  {
+    "path": "server/emulator_core/captures/blackwave-active/sport.png",
+    "bytes": 18178
+  },
+  {
+    "path": "server/emulator_core/captures/blackwave/boot.png",
+    "bytes": 22730
+  },
+  {
+    "path": "server/emulator_core/captures/blackwave/first-panel-frame.png",
+    "bytes": 17373
+  },
+  {
+    "path": "server/emulator_core/captures/blackwave/charging.png",
+    "bytes": 17815
+  },
+  {
+    "path": "server/emulator_core/captures/blackwave/low_battery.png",
+    "bytes": 17815
+  },
+  {
+    "path": "server/emulator_core/captures/blackwave/park.png",
+    "bytes": 17815
+  },
+  {
+    "path": "server/emulator_core/captures/blackwave/sport.png",
+    "bytes": 17815
+  },
+  {
+    "path": "server/emulator_core/captures/blackwave/report.json",
+    "bytes": 2468
+  },
+  {
+    "path": "server/emulator_core/captures/blackwave/ride.png",
+    "bytes": 17026
+  },
+  {
+    "path": "server/emulator_core/captures/blackwave/ride_next.png",
+    "bytes": 17026
+  },
+  {
+    "path": "server/emulator_core/captures/r7-active/boot.png",
+    "bytes": 10985
+  },
+  {
+    "path": "server/emulator_core/captures/r7-active/charging.png",
+    "bytes": 10712
+  },
+  {
+    "path": "server/emulator_core/captures/r7-active/first-panel-frame.png",
+    "bytes": 9625
+  },
+  {
+    "path": "server/emulator_core/captures/r7-active/low_battery.png",
+    "bytes": 16821
+  },
+  {
+    "path": "server/emulator_core/captures/r7-active/park.png",
+    "bytes": 17445
+  },
+  {
+    "path": "server/emulator_core/captures/r7-active/report.json",
+    "bytes": 3764
+  },
+  {
+    "path": "server/emulator_core/captures/r7-active/ride.png",
+    "bytes": 10185
+  },
+  {
+    "path": "server/emulator_core/captures/r7-active/ride_next.png",
+    "bytes": 10216
+  },
+  {
+    "path": "server/emulator_core/captures/r7-active/sport.png",
+    "bytes": 10503
+  },
+  {
+    "path": "server/emulator_core/captures/r7/boot.png",
+    "bytes": 10985
+  },
+  {
+    "path": "server/emulator_core/captures/r7/first-panel-frame.png",
+    "bytes": 9625
+  },
+  {
+    "path": "server/emulator_core/captures/r7/charging.png",
+    "bytes": 10090
+  },
+  {
+    "path": "server/emulator_core/captures/r7/low_battery.png",
+    "bytes": 10090
+  },
+  {
+    "path": "server/emulator_core/captures/r7/park.png",
+    "bytes": 10090
+  },
+  {
+    "path": "server/emulator_core/captures/r7/sport.png",
+    "bytes": 10090
+  },
+  {
+    "path": "server/emulator_core/captures/r7/report.json",
+    "bytes": 2518
+  },
+  {
+    "path": "server/emulator_core/captures/r7/ride.png",
+    "bytes": 9798
+  },
+  {
+    "path": "server/emulator_core/captures/r7/ride_next.png",
+    "bytes": 9798
+  },
+  {
+    "path": "server/emulator_core/captures/stock-active/boot.png",
+    "bytes": 6153
+  },
+  {
+    "path": "server/emulator_core/captures/stock-active/charging.png",
+    "bytes": 4359
+  },
+  {
+    "path": "server/emulator_core/captures/stock-active/low_battery.png",
+    "bytes": 4359
+  },
+  {
+    "path": "server/emulator_core/captures/stock-active/first-panel-frame.png",
+    "bytes": 4268
+  },
+  {
+    "path": "server/emulator_core/captures/stock-active/park.png",
+    "bytes": 5826
+  },
+  {
+    "path": "server/emulator_core/captures/stock-active/report.json",
+    "bytes": 3763
+  },
+  {
+    "path": "server/emulator_core/captures/stock-active/ride.png",
+    "bytes": 4238
+  },
+  {
+    "path": "server/emulator_core/captures/stock-active/ride_next.png",
+    "bytes": 4238
+  },
+  {
+    "path": "server/emulator_core/captures/stock-active/sport.png",
+    "bytes": 4184
+  },
+  {
+    "path": "server/emulator_core/captures/stock/boot.png",
+    "bytes": 6153
+  },
+  {
+    "path": "server/emulator_core/captures/stock/first-panel-frame.png",
+    "bytes": 4268
+  },
+  {
+    "path": "server/emulator_core/captures/stock/charging.png",
+    "bytes": 4532
+  },
+  {
+    "path": "server/emulator_core/captures/stock/low_battery.png",
+    "bytes": 4532
+  },
+  {
+    "path": "server/emulator_core/captures/stock/park.png",
+    "bytes": 4532
+  },
+  {
+    "path": "server/emulator_core/captures/stock/sport.png",
+    "bytes": 4532
+  },
+  {
+    "path": "server/emulator_core/captures/stock/report.json",
+    "bytes": 2487
+  },
+  {
+    "path": "server/emulator_core/captures/stock/ride.png",
+    "bytes": 4406
+  },
+  {
+    "path": "server/emulator_core/captures/stock/ride_next.png",
+    "bytes": 4406
+  },
+  {
+    "path": "server/emulator_core/captures/v51-active/boot.png",
+    "bytes": 13278
+  },
+  {
+    "path": "server/emulator_core/captures/v51-active/charging.png",
+    "bytes": 13026
+  },
+  {
+    "path": "server/emulator_core/captures/v51-active/first-panel-frame.png",
+    "bytes": 11941
+  },
+  {
+    "path": "server/emulator_core/captures/v51-active/low_battery.png",
+    "bytes": 10626
+  },
+  {
+    "path": "server/emulator_core/captures/v51-active/park.png",
+    "bytes": 16905
+  },
+  {
+    "path": "server/emulator_core/captures/v51-active/report.json",
+    "bytes": 3755
+  },
+  {
+    "path": "server/emulator_core/captures/v51-active/ride.png",
+    "bytes": 13379
+  },
+  {
+    "path": "server/emulator_core/captures/v51-active/ride_next.png",
+    "bytes": 13338
+  },
+  {
+    "path": "server/emulator_core/captures/v51-active/sport.png",
+    "bytes": 13552
+  },
+  {
+    "path": "server/emulator_core/captures/v51/boot.png",
+    "bytes": 13278
+  },
+  {
+    "path": "server/emulator_core/captures/v51/first-panel-frame.png",
+    "bytes": 11941
+  },
+  {
+    "path": "server/emulator_core/captures/v51/charging.png",
+    "bytes": 12422
+  },
+  {
+    "path": "server/emulator_core/captures/v51/low_battery.png",
+    "bytes": 12422
+  },
+  {
+    "path": "server/emulator_core/captures/v51/park.png",
+    "bytes": 12422
+  },
+  {
+    "path": "server/emulator_core/captures/v51/sport.png",
+    "bytes": 12422
+  },
+  {
+    "path": "server/emulator_core/captures/v51/report.json",
+    "bytes": 2508
+  },
+  {
+    "path": "server/emulator_core/captures/v51/ride.png",
+    "bytes": 12120
+  },
+  {
+    "path": "server/emulator_core/captures/v51/ride_next.png",
+    "bytes": 12120
+  },
+  {
+    "path": "server/emulator_core/emulator/images.py",
+    "bytes": 2967
+  },
+  {
+    "path": "server/emulator_core/emulator/session.py",
+    "bytes": 16085
+  },
+  {
+    "path": "server/emulator_core/emutools/cap.sh",
+    "bytes": 718
+  },
+  {
+    "path": "server/emulator_core/emutools/diag_fault.py",
+    "bytes": 4674
+  },
+  {
+    "path": "server/emulator_core/emutools/diffdirs.py",
+    "bytes": 670
+  },
+  {
+    "path": "server/emulator_core/emutools/final_sheet.sh",
+    "bytes": 1457
+  },
+  {
+    "path": "server/emulator_core/emutools/forced_only.sh",
+    "bytes": 342
+  },
+  {
+    "path": "server/emulator_core/emutools/groups.sh",
+    "bytes": 412
+  },
+  {
+    "path": "server/emulator_core/emutools/harness.py",
+    "bytes": 14745
+  },
+  {
+    "path": "server/emulator_core/emutools/keys.py",
+    "bytes": 599
+  },
+  {
+    "path": "server/emulator_core/emutools/patch_stock.py",
+    "bytes": 1822
+  },
+  {
+    "path": "server/emulator_core/emutools/probe_boot.py",
+    "bytes": 5038
+  },
+  {
+    "path": "server/emulator_core/emutools/probe_boot_held.py",
+    "bytes": 5411
+  },
+  {
+    "path": "server/emulator_core/emutools/probe_home.py",
+    "bytes": 1847
+  },
+  {
+    "path": "server/emulator_core/emutools/probe_reg.py",
+    "bytes": 650
+  },
+  {
+    "path": "server/emulator_core/emutools/probe_view_held.py",
+    "bytes": 5612
+  },
+  {
+    "path": "server/emulator_core/emutools/run_emu.py",
+    "bytes": 9909
+  },
+  {
+    "path": "server/emulator_core/emutools/run_forced.py",
+    "bytes": 10044
+  },
+  {
+    "path": "server/emulator_core/emutools/scan_pm.py",
+    "bytes": 1275
+  },
+  {
+    "path": "server/emulator_core/emutools/sheet.py",
+    "bytes": 1066
+  },
+  {
+    "path": "server/emulator_core/emutools/suite.sh",
+    "bytes": 672
+  },
+  {
+    "path": "server/emulator_core/emutools/tea.py",
+    "bytes": 2373
+  },
+  {
+    "path": "server/emulator_core/lab_gui.py",
+    "bytes": 9087
+  },
+  {
+    "path": "server/emulator_core/requirements.txt",
+    "bytes": 32
+  },
+  {
+    "path": "server/emulator_core/visuals-ble/emulator/boot_firmware.py",
+    "bytes": 22956
+  },
+  {
+    "path": "server/emulator_core/visuals-ble/package_ble.py",
+    "bytes": 4436
+  },
+  {
+    "path": "server/firmware_service.js",
+    "bytes": 17447
+  },
+  {
+    "path": "server/firmware_storage/f3_display/FIRM.bin.enc",
+    "bytes": 1988440
+  },
+  {
+    "path": "server/firmware_storage/f3_display/info.json",
+    "bytes": 288
+  },
+  {
+    "path": "server/firmware_storage/f3_smoke/FIRM.bin.enc",
+    "bytes": 1988776
+  },
+  {
+    "path": "server/firmware_storage/f3_smoke/info.json",
+    "bytes": 288
+  },
+  {
+    "path": "server/firmware_storage/g3_blackwave/FIRM.bin.enc",
+    "bytes": 2004400
+  },
+  {
+    "path": "server/firmware_storage/g3_blackwave/info.json",
+    "bytes": 285
+  },
+  {
+    "path": "server/firmware_storage/g3_smoke/FIRM.bin.enc",
+    "bytes": 2012416
+  },
+  {
+    "path": "server/firmware_storage/g3_smoke/info.json",
+    "bytes": 288
+  },
+  {
+    "path": "server/index.js",
+    "bytes": 720
+  },
+  {
+    "path": "temp_extracted/f3_display/FIRM.bin.enc",
+    "bytes": 1988440
+  },
+  {
+    "path": "temp_extracted/f3_display/info.json",
+    "bytes": 300
+  },
+  {
+    "path": "temp_extracted/f3_smoke/FIRM.bin.enc",
+    "bytes": 1988776
+  },
+  {
+    "path": "temp_extracted/f3_smoke/info.json",
+    "bytes": 305
+  },
+  {
+    "path": "temp_extracted/g3_smoke/FIRM.bin.enc",
+    "bytes": 2012416
+  },
+  {
+    "path": "temp_extracted/g3_smoke/info.json",
+    "bytes": 305
+  },
+  {
+    "path": "test_complete_rebuild.mjs",
+    "bytes": 9348
+  },
+  {
+    "path": "vercel.json",
+    "bytes": 382
+  }
+]

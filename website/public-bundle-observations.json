@@ -1,0 +1,11 @@
+[
+  {
+    "public_asset_path": "/assets/index-Bm4uUVtQ.js",
+    "bytes": 343728,
+    "contains_admin_credential": true,
+    "contains_HMAC_signing_secret": true,
+    "matches_downloaded_asset": [
+      "client/dist/assets/index-BuNu8AQk.js"
+    ]
+  }
+]

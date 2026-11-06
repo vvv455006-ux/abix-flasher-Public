@@ -1,0 +1,350 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "project": {
+    "name": "Abi x OsmanAbi - Ninebot G3 Max & F3 Custom Display BLE Safe Flasher & StarCFW G3 Studio",
+    "version": "5.0.0",
+    "timestamp": "2026-11-05T07:46:33+01:00",
+    "developerBrand": "Abi x OsmanAbi",
+    "telegramContact": "@F3Prompt",
+    "noticeText": "Kaufe dein key bei @F3Prompt",
+    "adminPasscode": "RETIRED_CREDENTIAL_REMOVED",
+    "activeWorkspacePath": "C:\\Users\\ozisl\\.gemini\\antigravity\\scratch\\abix-ninebot-flasher"
+  },
+  "deployment": {
+    "platform": "Vercel",
+    "status": "READY",
+    "productionUrl": "https://abix-ninebot-flasher.vercel.app",
+    "deploymentUrl": "https://abix-ninebot-flasher-d3ntlx7on-ozislercinar5-9827s-projects.vercel.app",
+    "inspectorUrl": "https://vercel.com/ozislercinar5-9827s-projects/abix-ninebot-flasher/BKXvYtimRHjFa3zSWKEFo5N5mTs3",
+    "deploymentId": "dpl_BKXvYtimRHjFa3zSWKEFo5N5mTs3",
+    "user": "c-naar",
+    "architecture": "Full-stack Vite (React + Tailwind CSS) + Node.js Express Serverless Function (`/api` rewrite via `vercel.json`)",
+    "configuration": {
+      "buildCommand": "cd client && npm install && npm run build",
+      "outputDirectory": "client/dist",
+      "functions": {
+        "api/index.js": {
+          "includeFiles": "server/firmware_storage/**"
+        }
+      },
+      "rewrites": [
+        {
+          "source": "/api/(.*)",
+          "destination": "/api"
+        },
+        {
+          "source": "/(.*)",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  },
+  "firmwareCatalog": [
+    {
+      "id": "g3_blackwave",
+      "displayName": "Blackwave g3",
+      "model": "g3",
+      "modelLabel": "Ninebot G3 Max",
+      "type": "BLE",
+      "sizeBytes": 2004400,
+      "sizeKb": "1957.4 KB",
+      "sourceArchive": "StarCFW_v0.1_blackwave_G3.zip",
+      "payloadFile": "server/firmware_storage/g3_blackwave/FIRM.bin.enc",
+      "md5Enc": "8a0e97ff59e3ae2c432511cb5e01fb95",
+      "description": "StarCFW v0.1 Blackwave OLED Edition für Ninebot G3 Max",
+      "features": [
+        "StarCFW v0.1 Blackwave Cluster Interface",
+        "High Contrast Wave Gauge UI",
+        "Ultra-Pacer Speed Curve & Boot Animation"
+      ]
+    },
+    {
+      "id": "g3_smoke",
+      "displayName": "Stone Island g3",
+      "model": "g3",
+      "modelLabel": "Ninebot G3 Max",
+      "type": "BLE",
+      "sizeBytes": 2012416,
+      "sizeKb": "1965.3 KB",
+      "payloadFile": "server/firmware_storage/g3_smoke/FIRM.bin.enc",
+      "md5Enc": "79815dd4f14603f03769054d6d23fb27",
+      "description": "Stone Island Custom OLED Display für Ninebot G3 Max",
+      "features": [
+        "Stone Island Signature Compass Badge",
+        "Ghost Smoke Particle Animation",
+        "G3 Safe UART BLE Streaming"
+      ]
+    },
+    {
+      "id": "f3_smoke",
+      "displayName": "Stone Island f3",
+      "model": "f3",
+      "modelLabel": "Ninebot F3",
+      "type": "BLE",
+      "sizeBytes": 1988776,
+      "sizeKb": "1942.2 KB",
+      "payloadFile": "server/firmware_storage/f3_smoke/FIRM.bin.enc",
+      "md5Enc": "33d77be8ef464ab054dddaf2bf27bc5c",
+      "description": "Stone Island Custom OLED Display für Ninebot F3",
+      "features": [
+        "Stone Island F3 Compact Cluster",
+        "Dynamic Smoke Canvas",
+        "Ninebot F3 Protocol Compatibility"
+      ]
+    },
+    {
+      "id": "f3_display",
+      "displayName": "Under armour f3",
+      "model": "f3",
+      "modelLabel": "Ninebot F3",
+      "type": "BLE",
+      "sizeBytes": 1988440,
+      "sizeKb": "1941.8 KB",
+      "payloadFile": "server/firmware_storage/f3_display/FIRM.bin.enc",
+      "md5Enc": "756423718a8a45990657107e2505f607",
+      "description": "Under Armour Custom HUD Display für Ninebot F3",
+      "features": [
+        "Under Armour Carbon Fiber Weave Texture",
+        "F1 Dynamic Shift Light Tachometer",
+        "High-Output Extended Sport+ Gauge"
+      ]
+    }
+  ],
+  "securityArchitecture": {
+    "gatekeeper": {
+      "keyFormat": "ABI-XXXX-XXXX-XXXX-XXXX (Starts with ABI-)",
+      "siteVisibility": "Hidden until authenticated. Zero access to HUD or Flasher without active key.",
+      "creditSystem": "1 Key = 1 Flash Credit. When flash completes, credit burns to 0, session terminates, and UI redirects to login.",
+      "rateLimiter": "IP-based lockout after 5 failed key attempts (15 minutes lockout)",
+      "constantTimeComparison": true,
+      "notice": "Kaufe dein key bei @F3Prompt"
+    },
+    "adminPortal": {
+      "passcode": "RETIRED_CREDENTIAL_REMOVED",
+      "route": "/?admin=1 and /api/admin/*",
+      "keyGenerator": "High-entropy military-grade generator with 18.4 Quintillion combinations (ABI-BW-XXXX-XXXX-XXXX-XXXX)",
+      "rateLimiter": "IP-based lockout after 3 failed admin attempts (15 minutes lockout)",
+      "constantTimeComparison": "crypto.timingSafeEqual(sha256(input), sha256(expected))",
+      "features": [
+        "Live Key Generator (Stone Island g3, Blackwave g3, Stone Island f3, Under armour f3)",
+        "Key Credit Reload (+1 Credit)",
+        "STM32 Silicon UID Unlocker",
+        "Key Revocation and Deletion",
+        "Real-Time Audit Security Event Logs"
+      ]
+    },
+    "drmAndAntiPiracy": {
+      "directDownloadBlocking": [".bin", ".bin.enc", ".hex", ".zip", ".tar", ".enc", "/firmware_storage"],
+      "antiInspection": {
+        "contextMenu": "Disabled (e.preventDefault on contextmenu)",
+        "keyboardShortcutsBlocked": ["F12", "Ctrl+Shift+I", "Ctrl+Shift+J", "Ctrl+Shift+C", "Ctrl+U", "Ctrl+S"],
+        "antiDebuggerTrap": "High-frequency dynamic performance timing loop triggers breakpoint stall if DevTools open",
+        "consolePoisoning": "console.log, warn, debug, info, trace, dir, table overridden with silent no-ops"
+      },
+      "chunkStreaming": {
+        "mode": "In-memory sequential encrypted chunks (512-byte slices)",
+        "authentication": "HMAC-SHA256 signature per chunk verified on client",
+        "antiScraping": "Out-of-order chunk retrieval triggers immediate session destruction",
+        "zeroPlaintext": "Raw binary is never exposed over HTTP responses; only encrypted ciphertext bytes + MAC + CRC"
+      },
+      "hardwareLocking": "Scraped STM32 Silicon 96-bit Unique ID (UID) permanently locks to key on flash initialization."
+    }
+  },
+  "emulatorSpecification": {
+    "title": "StarCFW G3 Display Emulator",
+    "sourceCore": "StarCFW_G3_emulator.zip (Python Unicorn / LVGL cluster engine reference)",
+    "panelGeometry": {
+      "width": 240,
+      "height": 320,
+      "orientation": "Portrait",
+      "interface": "SPI Panel (/dev/spi0)",
+      "pixelFormat": "16-bit RGB565",
+      "baseMemory": "0x0C028000",
+      "headerAddress": "0x20015BE4"
+    },
+    "gearModes": [
+      { "id": 1, "name": "Walk", "color": "#38bdf8", "maxSpeedKmH": 6, "maxPowerWatts": 180 },
+      { "id": 2, "name": "Eco", "color": "#22c55e", "maxSpeedKmH": 20, "maxPowerWatts": 450 },
+      { "id": 5, "name": "Drive", "color": "#f97316", "maxSpeedKmH": 25, "maxPowerWatts": 750 },
+      { "id": 3, "name": "Sport", "color": "#ef4444", "maxSpeedKmH": 52, "maxPowerWatts": 1200 }
+    ],
+    "clusterRegisters": {
+      "gear_mode": "1: Walk, 2: Eco, 5: Drive, 3: Sport",
+      "ctl_headlight": "Toggle headlight on/off with high-beam icon",
+      "ctl_turn_light": "0: Off, 1: Left, 2: Right, 3: Hazard with synchronized ticker and sound",
+      "brake_on": "Hold-to-brake triggers (!) BRAKE warning, cuts power, decelerates with regen sound",
+      "cruise_onoff": "Toggle cruise speed lock",
+      "boost_mode": "Overboost up to 55 km/h with neon shift flare",
+      "double_drive": "2WD front + rear motor indicator",
+      "tcs_onoff": "Traction Control System",
+      "unit_eu": "0: km/h, 1: mph",
+      "odo_or_trip": "Toggle Trip distance vs Total Odometer distance",
+      "battery_total": "10-segment cell level, voltage (41.4V), percentage (0-100%)",
+      "current_speed": "0-55 km/h dynamic digital 7-segment readout",
+      "current_power": "0-1200 Watts real-time power arc"
+    },
+    "audioSynthesizer": {
+      "engine": "Web Audio API Cyber Synth (soundEffects.js)",
+      "sounds": [
+        "playBootChime: StarCFW 4-tone ascending startup arpeggio (G4, C5, E5, C6)",
+        "setThrottleSound: Dynamic brushless motor pitch-shift whine (160Hz -> 1060Hz)",
+        "playTurnSignalTick: Click-clack indicator relay tick",
+        "playBrakeRegen: Regenerative electronic braking whoosh",
+        "playClick, playConnect, playLock, playSuccess, playError"
+      ]
+    },
+    "bootSplashSequence": {
+      "trigger": "BOOT SPLASH button",
+      "durationMs": 2700,
+      "phases": [
+        "Phase 0: OLED black blank",
+        "Phase 1: StarCFW / Blackwave G3 logo fade-in & boot chime",
+        "Phase 2: Instrument cluster sweep & self-test pass",
+        "Phase 3: Transition into live HUD dashboard"
+      ]
+    }
+  },
+  "apiEndpoints": [
+    {
+      "method": "POST",
+      "path": "/api/flasher/login-key",
+      "auth": "Public with Rate Limit",
+      "description": "Validates an ABI- key and returns unlocked key data for studio entry",
+      "parameters": { "key": "string" },
+      "response": { "success": "boolean", "key": "object" }
+    },
+    {
+      "method": "GET",
+      "path": "/api/firmwares",
+      "auth": "Public",
+      "description": "Lists all 4 custom display firmware mods with metadata and sizes",
+      "parameters": {},
+      "response": { "success": "boolean", "firmwares": "array" }
+    },
+    {
+      "method": "POST",
+      "path": "/api/flasher/verify-and-lock",
+      "auth": "Session Key",
+      "description": "Verifies key credit > 0 and permanently binds key to scooter STM32 UID",
+      "parameters": { "keyString": "string", "selectedFileId": "string", "scooterUid": "string", "scooterSerial": "string", "scooterModel": "string" },
+      "response": { "success": "boolean", "status": "string" }
+    },
+    {
+      "method": "POST",
+      "path": "/api/flasher/init-session",
+      "auth": "Session Key",
+      "description": "Creates in-memory encrypted flash session and generates session token",
+      "parameters": { "keyString": "string", "selectedFileId": "string", "scooterUid": "string", "batteryLevel": "number" },
+      "response": { "success": "boolean", "sessionToken": "string", "totalChunks": "number" }
+    },
+    {
+      "method": "GET",
+      "path": "/api/flasher/chunk",
+      "auth": "Session Token",
+      "description": "Streams sequential encrypted 512-byte firmware chunk with HMAC-SHA256 signature",
+      "parameters": { "sessionToken": "string", "chunkIndex": "number" },
+      "response": { "success": "boolean", "chunkIndex": "number", "encBytes": "string", "mac": "string", "crc": "number" }
+    },
+    {
+      "method": "POST",
+      "path": "/api/flasher/complete",
+      "auth": "Session Token",
+      "description": "Consumes 1 credit, destroys active session, records log, triggers redirect to login gate",
+      "parameters": { "sessionToken": "string" },
+      "response": { "success": "boolean", "message": "string" }
+    },
+    {
+      "method": "POST",
+      "path": "/api/admin/auth",
+      "auth": "Admin PIN",
+      "description": "Authenticates admin using constant-time comparison against RETIRED_CREDENTIAL_REMOVED",
+      "parameters": { "pin": "string" },
+      "response": { "success": "boolean", "token": "string" }
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/keys",
+      "auth": "Admin PIN / Bearer Token",
+      "description": "Lists all keys with credits, customer notes, locked UIDs, and statuses",
+      "parameters": {},
+      "response": { "success": "boolean", "keys": "array" }
+    },
+    {
+      "method": "POST",
+      "path": "/api/admin/keys/generate",
+      "auth": "Admin PIN / Bearer Token",
+      "description": "Generates new 1-credit key using military-grade crypto generator",
+      "parameters": { "fileId": "string", "customerName": "string", "notes": "string", "credits": "number" },
+      "response": { "success": "boolean", "key": "object" }
+    },
+    {
+      "method": "POST",
+      "path": "/api/admin/keys/:id/add-credit",
+      "auth": "Admin PIN / Bearer Token",
+      "description": "Adds 1 credit to an existing exhausted key",
+      "parameters": { "id": "string" },
+      "response": { "success": "boolean", "key": "object" }
+    },
+    {
+      "method": "POST",
+      "path": "/api/admin/keys/:id/unlock",
+      "auth": "Admin PIN / Bearer Token",
+      "description": "Unlocks STM32 UID bound to a key for scooter reassignment",
+      "parameters": { "id": "string" },
+      "response": { "success": "boolean", "key": "object" }
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/admin/keys/:id",
+      "auth": "Admin PIN / Bearer Token",
+      "description": "Permanently deletes a key from the database",
+      "parameters": { "id": "string" },
+      "response": { "success": "boolean" }
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/stats",
+      "auth": "Admin PIN / Bearer Token",
+      "description": "Retrieves system statistics: total keys, active credits, completed flashes, blocked piracy attempts",
+      "parameters": {},
+      "response": { "success": "boolean", "stats": "object" }
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/logs",
+      "auth": "Admin PIN / Bearer Token",
+      "description": "Retrieves live audit trail of flash operations and security events",
+      "parameters": {},
+      "response": { "success": "boolean", "logs": "array" }
+    }
+  ],
+  "fileInventory": [
+    { "path": "vercel.json", "category": "Deployment", "description": "Vercel serverless configuration, build commands, and API rewrites" },
+    { "path": "api/index.js", "category": "Backend", "description": "Vercel serverless function entrypoint mounting Express app" },
+    { "path": "server/app.js", "category": "Backend", "description": "Hardened Express application with DRM, API endpoints, rate limiters, and security middleware" },
+    { "path": "server/index.js", "category": "Backend", "description": "Local server runner importing app.js and listening on port 3001" },
+    { "path": "server/db.js", "category": "Database", "description": "High-entropy key generator, database controller, and serverless /tmp fallback" },
+    { "path": "server/firmware_service.js", "category": "Backend", "description": "DRM chunk streaming engine, sequential validation, and firmware catalog reader" },
+    { "path": "server/data_store.json", "category": "Database", "description": "Persisted storage for keys, admin settings, and audit logs" },
+    { "path": "client/src/App.jsx", "category": "Frontend", "description": "Root component managing Gatekeeper login, Admin portal toggle, and HUD navigation" },
+    { "path": "client/src/components/KeyLoginGate.jsx", "category": "Frontend", "description": "Clean black & white login gatekeeper with @F3Prompt notice and rate limiting" },
+    { "path": "client/src/components/AdminPortal.jsx", "category": "Frontend", "description": "Admin dashboard with key generator, credit manager, UID unlocker, and audit log" },
+    { "path": "client/src/components/ScooterHudPreview.jsx", "category": "Frontend", "description": "Interactive StarCFW G3 240x320 SPI display emulator with gear modes, lights, and audio" },
+    { "path": "client/src/components/FlasherWizard.jsx", "category": "Frontend", "description": "6-step Web Bluetooth flashing wizard with real-time BLE transfer and 1-credit burn" },
+    { "path": "client/src/components/Navbar.jsx", "category": "Frontend", "description": "Header navigation with audio mute toggle, status pills, and key logout" },
+    { "path": "client/src/components/AntiInspectShield.jsx", "category": "Frontend", "description": "Client-side anti-inspect protection (F12, right-click, anti-debugger, console sanitizer)" },
+    { "path": "client/src/services/soundEffects.js", "category": "Frontend", "description": "Web Audio API synthesizer for motor whine, boot chimes, turn signals, and UI feedback" },
+    { "path": "client/src/services/ninebotBleService.js", "category": "Frontend", "description": "Web Bluetooth Nordic UART Service (NUS) driver for Ninebot G3 Max and F3" },
+    { "path": "server/firmware_storage/g3_blackwave/FIRM.bin.enc", "category": "Firmware", "description": "Encrypted firmware binary for Blackwave g3" },
+    { "path": "server/firmware_storage/g3_smoke/FIRM.bin.enc", "category": "Firmware", "description": "Encrypted firmware binary for Stone Island g3" },
+    { "path": "server/firmware_storage/f3_smoke/FIRM.bin.enc", "category": "Firmware", "description": "Encrypted firmware binary for Stone Island f3" },
+    { "path": "server/firmware_storage/f3_display/FIRM.bin.enc", "category": "Firmware", "description": "Encrypted firmware binary for Under armour f3" }
+  ],
+  "gitCommit": {
+    "commitHash": "9558736bef18cbd3bd9a740cc3a2f752c0838289",
+    "author": "Abi x OsmanAbi <abi@f3prompt.com>",
+    "date": "2026-11-04T23:10:49+01:00",
+    "message": "feat: Abi x OsmanAbi Ninebot G3 Max & F3 Display Studio with StarCFW G3 Emulator and Blackwave g3 mod",
+    "stats": "76 files changed, 12121 insertions(+)"
+  }
+}

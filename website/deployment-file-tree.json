@@ -1,0 +1,1202 @@
+[
+  {
+    "name": "src",
+    "type": "directory",
+    "mode": 16749,
+    "children": [
+      {
+        "name": "README.md",
+        "type": "file",
+        "mode": 33206,
+        "uid": "1226112c1687218cdfdaad9efe7f142d36fff6e3"
+      },
+      {
+        "name": "Start-G3-Lab.cmd",
+        "type": "file",
+        "mode": 33206,
+        "uid": "56a1a3045490f15c1563152c324ed8deb5e3f647"
+      },
+      {
+        "name": "api",
+        "type": "directory",
+        "mode": 16749,
+        "children": [
+          {
+            "name": "index.js",
+            "type": "file",
+            "mode": 33206,
+            "uid": "0ee47ece1dada63733233c4d69490ce005dbcb26"
+          }
+        ]
+      },
+      {
+        "name": "client",
+        "type": "directory",
+        "mode": 16749,
+        "children": [
+          {
+            "name": ".oxlintrc.json",
+            "type": "file",
+            "mode": 33206,
+            "uid": "aee140772126e9d3fc717cd1073977262d910d64"
+          },
+          {
+            "name": "README.md",
+            "type": "file",
+            "mode": 33206,
+            "uid": "7ef8d300bd047ec2d685919c31d8a873305a14fc"
+          },
+          {
+            "name": "dist",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "assets",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "index-Bd5EyPIA.css",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "7d4af2ab2656b0da16057f8c91cb104859376e9f"
+                  },
+                  {
+                    "name": "index-BuNu8AQk.js",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "c676f83eff605d09480460d16c4f05516ed06cb4"
+                  }
+                ]
+              },
+              {
+                "name": "favicon.svg",
+                "type": "file",
+                "mode": 33206,
+                "uid": "3f5bb8f3a6a05b7ca68a62581d2dd5bc88812caf"
+              },
+              {
+                "name": "icons.svg",
+                "type": "file",
+                "mode": 33206,
+                "uid": "f9897ac25e13de9ea601d2f1ac5d9353dfbefcda"
+              },
+              {
+                "name": "index.html",
+                "type": "file",
+                "mode": 33206,
+                "uid": "1051af32fe114ccec240d08a17af6b7510a722e4"
+              }
+            ]
+          },
+          {
+            "name": "public",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "favicon.svg",
+                "type": "file",
+                "mode": 33206,
+                "uid": "3f5bb8f3a6a05b7ca68a62581d2dd5bc88812caf"
+              },
+              {
+                "name": "icons.svg",
+                "type": "file",
+                "mode": 33206,
+                "uid": "f9897ac25e13de9ea601d2f1ac5d9353dfbefcda"
+              }
+            ]
+          },
+          {
+            "name": "index.html",
+            "type": "file",
+            "mode": 33206,
+            "uid": "46cfcbc8b5a2a539efb5b1ea63711a9f1ffeeb6d"
+          },
+          {
+            "name": "package-lock.json",
+            "type": "file",
+            "mode": 33206,
+            "uid": "f21d22a0de3fa4ae75160ef6424f38034662d87f"
+          },
+          {
+            "name": "package.json",
+            "type": "file",
+            "mode": 33206,
+            "uid": "4fd447215c4c38687633b0cf0d6731e1a15cdde0"
+          },
+          {
+            "name": "src",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "App.css",
+                "type": "file",
+                "mode": 33206,
+                "uid": "289216d09e5558fd9ae4249a8910dd37f32d2cc0"
+              },
+              {
+                "name": "App.jsx",
+                "type": "file",
+                "mode": 33206,
+                "uid": "264286169fb22a89d267ca1624fdfda85e8a872a"
+              },
+              {
+                "name": "assets",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "hero.png",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "013c992c30720bf156b62bd4c8a2760e71fe842a"
+                  },
+                  {
+                    "name": "react.svg",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "f505ddc8ebe56bdc51efb721ef04923a8d3068dd"
+                  },
+                  {
+                    "name": "vite.svg",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "f08775d18b2161f769267bdc0ebdbcf7aa632099"
+                  }
+                ]
+              },
+              {
+                "name": "components",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "AdminPortal.jsx",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "c43f25987d9eee446881522765726fc2da0f9756"
+                  },
+                  {
+                    "name": "AdminStudio.jsx",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "f4e05c20ebc3196cd7d1a02cf7153f062cc76377"
+                  },
+                  {
+                    "name": "AntiInspectShield.jsx",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "64e6a684a4e22918affa324bc3537c5b346a08c8"
+                  },
+                  {
+                    "name": "FlasherWizard.jsx",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "c0aa353f96f5b339ffac67b715157567df6f0cc2"
+                  },
+                  {
+                    "name": "KeyLoginGate.jsx",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "f29df2769632f3ff54f87c4feeb3b66f88930daf"
+                  },
+                  {
+                    "name": "LicenseChecker.jsx",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "51439b2ef438e74160fb9d6b334db8cdc98772d8"
+                  },
+                  {
+                    "name": "Navbar.jsx",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "9695ddad59fad159273ccc8c11f2c23be281bd79"
+                  },
+                  {
+                    "name": "ScooterHudPreview.jsx",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "78182aefa1036d718c5c0c04ba4c91ec9389f853"
+                  }
+                ]
+              },
+              {
+                "name": "index.css",
+                "type": "file",
+                "mode": 33206,
+                "uid": "5c8d3faac96505b20a8e655aa3dbf56c4c887874"
+              },
+              {
+                "name": "main.jsx",
+                "type": "file",
+                "mode": 33206,
+                "uid": "143cd7859c0fec24a24bf4fefb4c7ff6fa5acba3"
+              },
+              {
+                "name": "services",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "ninebotBleService.js",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "779100526d8e7767bb404aca400fe14e31945193"
+                  },
+                  {
+                    "name": "soundEffects.js",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "0eee04415a878dd2a0a12cc248d0bcffde556720"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "vite.config.js",
+            "type": "file",
+            "mode": 33206,
+            "uid": "c63bdb0da5851adb08ffeaba869d689f818ecce9"
+          }
+        ]
+      },
+      {
+        "name": "package-lock.json",
+        "type": "file",
+        "mode": 33206,
+        "uid": "1990ff19a7cbfbe94f5fcacc39d801b2bf3bf2e5"
+      },
+      {
+        "name": "package.json",
+        "type": "file",
+        "mode": 33206,
+        "uid": "c4d649edceadf4197b2ddaadf227d0c65f3d3244"
+      },
+      {
+        "name": "project_export.json",
+        "type": "file",
+        "mode": 33206,
+        "uid": "b49fdedd27acb661a359960d916fa55f6c65f75b"
+      },
+      {
+        "name": "server",
+        "type": "directory",
+        "mode": 16749,
+        "children": [
+          {
+            "name": "app.js",
+            "type": "file",
+            "mode": 33206,
+            "uid": "55033739a607fe1a9bff78c8023ffc2016ec491f"
+          },
+          {
+            "name": "data_store.json",
+            "type": "file",
+            "mode": 33206,
+            "uid": "d1d805d5876fb4af04606ed4c222980e6309a125"
+          },
+          {
+            "name": "db.js",
+            "type": "file",
+            "mode": 33206,
+            "uid": "5d79825174a68fa044f107426486c6d047966999"
+          },
+          {
+            "name": "emulator_core",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "README.txt",
+                "type": "file",
+                "mode": 33206,
+                "uid": "61979ae72eee553f2c47352a35196bb8cf1727c9"
+              },
+              {
+                "name": "ble_lab.py",
+                "type": "file",
+                "mode": 33206,
+                "uid": "2d099caff5c5139537df6a5f31acf2a9b56d3a31"
+              },
+              {
+                "name": "captures",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "blackwave-active",
+                    "type": "directory",
+                    "mode": 16749,
+                    "children": [
+                      {
+                        "name": "boot.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "ffd87f2faa56e296a76c9cd1174818ddb66b8ee6"
+                      },
+                      {
+                        "name": "charging.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "5cc874100fdf349b491f06b54ffe246a7ed75363"
+                      },
+                      {
+                        "name": "first-panel-frame.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "00fc89e73aa921cb53a85ce57f9c211086844415"
+                      },
+                      {
+                        "name": "low_battery.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "659af3d2da880c00607258ed2ccbb9ad7cb92df1"
+                      },
+                      {
+                        "name": "park.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "e9220e7207fe0151403197195bd89a429e0bbe53"
+                      },
+                      {
+                        "name": "report.json",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "2bcabcfd2361d0c50ba0cd26a301e924bc4fe076"
+                      },
+                      {
+                        "name": "ride.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "a326b3c727dbb6352ba36b37911e78f1a8ea6334"
+                      },
+                      {
+                        "name": "ride_next.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "d874f2762489c1f9cea6b8bc00f0c26f67937891"
+                      },
+                      {
+                        "name": "sport.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "d33e99e3f351497a10d2da50206ca2dc511af673"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "blackwave",
+                    "type": "directory",
+                    "mode": 16749,
+                    "children": [
+                      {
+                        "name": "boot.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "ffd87f2faa56e296a76c9cd1174818ddb66b8ee6"
+                      },
+                      {
+                        "name": "first-panel-frame.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "00fc89e73aa921cb53a85ce57f9c211086844415"
+                      },
+                      {
+                        "name": "charging.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "d6ea66abddee9d71c4dab5b3579a6f7cc86aa0ec"
+                      },
+                      {
+                        "name": "low_battery.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "d6ea66abddee9d71c4dab5b3579a6f7cc86aa0ec"
+                      },
+                      {
+                        "name": "park.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "d6ea66abddee9d71c4dab5b3579a6f7cc86aa0ec"
+                      },
+                      {
+                        "name": "sport.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "d6ea66abddee9d71c4dab5b3579a6f7cc86aa0ec"
+                      },
+                      {
+                        "name": "report.json",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "3f43852244a46020c6bbec33560c37d0bdbbd429"
+                      },
+                      {
+                        "name": "ride.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "a2edfacbd4044598a3d2e75a17be217ec3fc3c0d"
+                      },
+                      {
+                        "name": "ride_next.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "a2edfacbd4044598a3d2e75a17be217ec3fc3c0d"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "r7-active",
+                    "type": "directory",
+                    "mode": 16749,
+                    "children": [
+                      {
+                        "name": "boot.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "d0679fb8f249a4bf822d92ab7710e85095d15e25"
+                      },
+                      {
+                        "name": "charging.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "8895462ebc08c29b0963a72648283ca8f232cb14"
+                      },
+                      {
+                        "name": "first-panel-frame.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "81000eb1971618ad02fb15fcac0ef86ce64895d7"
+                      },
+                      {
+                        "name": "low_battery.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "c02504dd465b0c18be99013854fa2055fe229b42"
+                      },
+                      {
+                        "name": "park.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "602a60a9297d1f2599a22c264ffc0651f819adec"
+                      },
+                      {
+                        "name": "report.json",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "806ecfea93b646a311805899c9bc3ef650be5aba"
+                      },
+                      {
+                        "name": "ride.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "7b058aec351deb08fa60afa0ff65346259ccdde7"
+                      },
+                      {
+                        "name": "ride_next.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "d8abc9250a2ed05781303b866aae4428b0e51e3c"
+                      },
+                      {
+                        "name": "sport.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "281b800f0f155c954d987697aa815997e77c47ff"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "r7",
+                    "type": "directory",
+                    "mode": 16749,
+                    "children": [
+                      {
+                        "name": "boot.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "d0679fb8f249a4bf822d92ab7710e85095d15e25"
+                      },
+                      {
+                        "name": "first-panel-frame.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "81000eb1971618ad02fb15fcac0ef86ce64895d7"
+                      },
+                      {
+                        "name": "charging.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "5a53674b002db1d80d2f7fdfa20f9ef76283199a"
+                      },
+                      {
+                        "name": "low_battery.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "5a53674b002db1d80d2f7fdfa20f9ef76283199a"
+                      },
+                      {
+                        "name": "park.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "5a53674b002db1d80d2f7fdfa20f9ef76283199a"
+                      },
+                      {
+                        "name": "sport.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "5a53674b002db1d80d2f7fdfa20f9ef76283199a"
+                      },
+                      {
+                        "name": "report.json",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "af542c88f7e781bdfd923fffeaa4aa99f4489916"
+                      },
+                      {
+                        "name": "ride.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "48552a672dfde8929d07840f0f336c4b67493384"
+                      },
+                      {
+                        "name": "ride_next.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "48552a672dfde8929d07840f0f336c4b67493384"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "stock-active",
+                    "type": "directory",
+                    "mode": 16749,
+                    "children": [
+                      {
+                        "name": "boot.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "0d0f64c2bdef58afbe126aed2d57f9dce1e6f8bb"
+                      },
+                      {
+                        "name": "charging.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "d7fff708a6f7e9a563eabe595adb8c0899895871"
+                      },
+                      {
+                        "name": "low_battery.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "d7fff708a6f7e9a563eabe595adb8c0899895871"
+                      },
+                      {
+                        "name": "first-panel-frame.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "248417b9790348438d03d59583645e9426158b3e"
+                      },
+                      {
+                        "name": "park.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "50233e4437572c4c54471511aa478531993f0726"
+                      },
+                      {
+                        "name": "report.json",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "97bc3b8b0db3b27af392208d0b150d413b44481d"
+                      },
+                      {
+                        "name": "ride.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "38314040a55d847b2674de0bb160e8e2e5419f36"
+                      },
+                      {
+                        "name": "ride_next.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "38314040a55d847b2674de0bb160e8e2e5419f36"
+                      },
+                      {
+                        "name": "sport.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "88e9667c359da3092c428634db7cfd37ab994d32"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "stock",
+                    "type": "directory",
+                    "mode": 16749,
+                    "children": [
+                      {
+                        "name": "boot.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "0d0f64c2bdef58afbe126aed2d57f9dce1e6f8bb"
+                      },
+                      {
+                        "name": "first-panel-frame.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "248417b9790348438d03d59583645e9426158b3e"
+                      },
+                      {
+                        "name": "charging.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "769b0c7e443696135ddc6863de1c0a18141d0cb3"
+                      },
+                      {
+                        "name": "low_battery.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "769b0c7e443696135ddc6863de1c0a18141d0cb3"
+                      },
+                      {
+                        "name": "park.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "769b0c7e443696135ddc6863de1c0a18141d0cb3"
+                      },
+                      {
+                        "name": "sport.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "769b0c7e443696135ddc6863de1c0a18141d0cb3"
+                      },
+                      {
+                        "name": "report.json",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "1d31b4cb0628fcc972e0a3bf3e9bbad483a2f827"
+                      },
+                      {
+                        "name": "ride.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "2dee4d91c10410cdbb0f472210c44ae48e7ad43f"
+                      },
+                      {
+                        "name": "ride_next.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "2dee4d91c10410cdbb0f472210c44ae48e7ad43f"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "v51-active",
+                    "type": "directory",
+                    "mode": 16749,
+                    "children": [
+                      {
+                        "name": "boot.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "634021dddb097d9937a374317905634f3f2e7c7f"
+                      },
+                      {
+                        "name": "charging.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "10871db09d485de7bdfddd5c635ff09206735919"
+                      },
+                      {
+                        "name": "first-panel-frame.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "98cc926a4846b0b41675c9b3c64ce3e9b9cc8b69"
+                      },
+                      {
+                        "name": "low_battery.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "7466bd69d9a434b0f157430f3353893bb945f79d"
+                      },
+                      {
+                        "name": "park.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "a62b762f332c990bfeb48f829c2ef415cebf8a1e"
+                      },
+                      {
+                        "name": "report.json",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "ca511e31b778713ca095737afbdae16856724688"
+                      },
+                      {
+                        "name": "ride.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "3314261f4d8142e33df0aaae4814383de42034d7"
+                      },
+                      {
+                        "name": "ride_next.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "f77b51ba74b959741a722f8d2b26168a55fede96"
+                      },
+                      {
+                        "name": "sport.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "6591d54f6ec2c894ac10d54a50b958c801ed36e5"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "v51",
+                    "type": "directory",
+                    "mode": 16749,
+                    "children": [
+                      {
+                        "name": "boot.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "634021dddb097d9937a374317905634f3f2e7c7f"
+                      },
+                      {
+                        "name": "first-panel-frame.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "98cc926a4846b0b41675c9b3c64ce3e9b9cc8b69"
+                      },
+                      {
+                        "name": "charging.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "c2d2a0b0dcc4a7b3c28a718f83d3c5a9d0bfaa36"
+                      },
+                      {
+                        "name": "low_battery.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "c2d2a0b0dcc4a7b3c28a718f83d3c5a9d0bfaa36"
+                      },
+                      {
+                        "name": "park.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "c2d2a0b0dcc4a7b3c28a718f83d3c5a9d0bfaa36"
+                      },
+                      {
+                        "name": "sport.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "c2d2a0b0dcc4a7b3c28a718f83d3c5a9d0bfaa36"
+                      },
+                      {
+                        "name": "report.json",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "04f69b0d217ae468ff08b2f3bf98ae95d0086b1e"
+                      },
+                      {
+                        "name": "ride.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "fed872f3acbf04464dcf4748d943d84d2450667a"
+                      },
+                      {
+                        "name": "ride_next.png",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "fed872f3acbf04464dcf4748d943d84d2450667a"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "emulator",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "images.py",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "1f2207741baea8ae8f557e28fd879c9548402fc2"
+                  },
+                  {
+                    "name": "session.py",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "ef9a09306fc5f65ee42801e198d26d39b02b5e61"
+                  }
+                ]
+              },
+              {
+                "name": "emutools",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "cap.sh",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "53398a651d6dea13e3aaaec4964288a40c64e8d9"
+                  },
+                  {
+                    "name": "diag_fault.py",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "b68aeb92de4e7c6914d9da630b90bc9679649b93"
+                  },
+                  {
+                    "name": "diffdirs.py",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "aca755b0297a44d5d16c2f5f13dd48104b956247"
+                  },
+                  {
+                    "name": "final_sheet.sh",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "517f27be742750b5db32d21769f63925429e20b8"
+                  },
+                  {
+                    "name": "forced_only.sh",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "be9a0d9f6dd854bf3dc295901aaed60c153cd16d"
+                  },
+                  {
+                    "name": "groups.sh",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "33b3831cdfad21f944f672134ce1d1c969223d8f"
+                  },
+                  {
+                    "name": "harness.py",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "117ddfdfc449315757aa25bb0ff574ececef0bdd"
+                  },
+                  {
+                    "name": "keys.py",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "9fcc6b6a8959ac67a9d9481292ce5e5d663079e6"
+                  },
+                  {
+                    "name": "patch_stock.py",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "a9e98de7679827248515848f3dbcdc3928d07e10"
+                  },
+                  {
+                    "name": "probe_boot.py",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "18a3636e65fd8145e09394fa4d64865a30152a6f"
+                  },
+                  {
+                    "name": "probe_boot_held.py",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "cd7e97fe4458bc98684ce8c23b37d9c743681986"
+                  },
+                  {
+                    "name": "probe_home.py",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "423e6786f5c09bc7025b8bbef4a8f99d6ca41f99"
+                  },
+                  {
+                    "name": "probe_reg.py",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "ed3d7cb3a8e927fec00c512bac3b49abefe8cb08"
+                  },
+                  {
+                    "name": "probe_view_held.py",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "c64f6f9dab2347e2bfa02dfb24d1ef0a73a3b298"
+                  },
+                  {
+                    "name": "run_emu.py",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "3e2ded6c5c7879931c4c83b75621a5b8a4b76004"
+                  },
+                  {
+                    "name": "run_forced.py",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "a8849b687d713dfc63ea4a90e5328185cf93664d"
+                  },
+                  {
+                    "name": "scan_pm.py",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "be65445443d0b1238527a08fe1f3cf2a676f5746"
+                  },
+                  {
+                    "name": "sheet.py",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "78ea16f8ed0fccaa92fef350733a05bd9395524a"
+                  },
+                  {
+                    "name": "suite.sh",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "b5e966604691f3081256d28b04c20702ae25852a"
+                  },
+                  {
+                    "name": "tea.py",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "6efbc3ebf455c142bf86a7db8979a25aee93ed58"
+                  }
+                ]
+              },
+              {
+                "name": "lab_gui.py",
+                "type": "file",
+                "mode": 33206,
+                "uid": "c42f09a3b10a0443a92b82f1d45a572e10012965"
+              },
+              {
+                "name": "requirements.txt",
+                "type": "file",
+                "mode": 33206,
+                "uid": "98f496b1f5cf031a628a23c328a051e5c5209a32"
+              },
+              {
+                "name": "visuals-ble",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "emulator",
+                    "type": "directory",
+                    "mode": 16749,
+                    "children": [
+                      {
+                        "name": "boot_firmware.py",
+                        "type": "file",
+                        "mode": 33206,
+                        "uid": "35709fb9110ebc014c9e957e96cbd85c0ee96bb1"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "package_ble.py",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "e6f0a5329a705051432573c8aef7d978713cfecb"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "firmware_service.js",
+            "type": "file",
+            "mode": 33206,
+            "uid": "37071d942a17da9819300173028f216f1681f080"
+          },
+          {
+            "name": "firmware_storage",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "f3_display",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "FIRM.bin.enc",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "aced883d83e101beb316ed9e88fcac671aaf2187"
+                  },
+                  {
+                    "name": "info.json",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "25c010ed805e2c446f92bd6b139c0796fd14df66"
+                  }
+                ]
+              },
+              {
+                "name": "f3_smoke",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "FIRM.bin.enc",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "2ac3f8a34e3da358312a4c42f23cdc4f0626d256"
+                  },
+                  {
+                    "name": "info.json",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "69617fa0af4ce248c4b1a84f1abf289bbb8cb4f7"
+                  }
+                ]
+              },
+              {
+                "name": "g3_blackwave",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "FIRM.bin.enc",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "87f8fd805c30e97598d51c8d03789e4bfb2804c2"
+                  },
+                  {
+                    "name": "info.json",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "47dbeb2c93294798a959e4a483eb763097b3ba1d"
+                  }
+                ]
+              },
+              {
+                "name": "g3_smoke",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "FIRM.bin.enc",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "13743185a0814c69d6ab551c9b120484ac0dfe15"
+                  },
+                  {
+                    "name": "info.json",
+                    "type": "file",
+                    "mode": 33206,
+                    "uid": "701ca496ede0d8e54d72325fa5d3ad9f1c961b9e"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "index.js",
+            "type": "file",
+            "mode": 33206,
+            "uid": "bca3a5dfafffd825483199a0c40778c4ba6c8cf3"
+          }
+        ]
+      },
+      {
+        "name": "temp_extracted",
+        "type": "directory",
+        "mode": 16749,
+        "children": [
+          {
+            "name": "f3_display",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "FIRM.bin.enc",
+                "type": "file",
+                "mode": 33206,
+                "uid": "aced883d83e101beb316ed9e88fcac671aaf2187"
+              },
+              {
+                "name": "info.json",
+                "type": "file",
+                "mode": 33206,
+                "uid": "3fb7bb744debc058213df12b08e7b5df639931a7"
+              }
+            ]
+          },
+          {
+            "name": "f3_smoke",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "FIRM.bin.enc",
+                "type": "file",
+                "mode": 33206,
+                "uid": "2ac3f8a34e3da358312a4c42f23cdc4f0626d256"
+              },
+              {
+                "name": "info.json",
+                "type": "file",
+                "mode": 33206,
+                "uid": "2efa6fb8192221b3a323f345312cbcdb16be46e2"
+              }
+            ]
+          },
+          {
+            "name": "g3_smoke",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "FIRM.bin.enc",
+                "type": "file",
+                "mode": 33206,
+                "uid": "13743185a0814c69d6ab551c9b120484ac0dfe15"
+              },
+              {
+                "name": "info.json",
+                "type": "file",
+                "mode": 33206,
+                "uid": "921e2ad00ee5c3edfac635720781ea816ee1cc7f"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "test_complete_rebuild.mjs",
+        "type": "file",
+        "mode": 33206,
+        "uid": "a7eaa72f16dfc8a5d4a8bd813cb92013d7d7baac"
+      },
+      {
+        "name": "vercel.json",
+        "type": "file",
+        "mode": 33206,
+        "uid": "dd284b06d385a276a721e4783b49e7e8dae91e54"
+      }
+    ]
+  },
+  {
+    "name": "out",
+    "type": "directory",
+    "mode": 16749,
+    "children": [
+      {
+        "name": "api",
+        "type": "directory",
+        "mode": 16749,
+        "children": [
+          {
+            "name": "index",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_3fLM3iwixG1gwtoIxFo9ePAx-18f9b59b9f5b3b6d7a2e93315cfb85ee7a"
+          }
+        ]
+      }
+    ]
+  }
+]

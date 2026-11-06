@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 128" role="img" aria-label="ABI FLASHER by @f3Prompt">
+  <rect width="460" height="128" fill="#070707"/>
+  <rect x="16" y="30" width="68" height="68" rx="17" fill="#f5f5f5"/>
+  <path d="M14.2 1.6 3.4 13.4h6.3l-1.2 9 12.1-11.8h-6.4z" transform="translate(24.4 38.4) scale(2.13)" fill="#070707"/>
+  <text x="104" y="72" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="40" fill="#f5f5f5" letter-spacing="-1.2">
+    <tspan font-weight="800">ABI</tspan><tspan font-weight="300" dx="10">FLASHER</tspan>
+  </text>
+  <text x="106" y="97" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#9a9a9a" letter-spacing="3">BY @F3PROMPT</text>
+</svg>

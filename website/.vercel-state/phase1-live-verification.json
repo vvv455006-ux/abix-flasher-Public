@@ -1,0 +1,14 @@
+{
+  "static_CSP_present": true,
+  "static_nosniff": true,
+  "public_assets_have_no_retired_or_new_credentials": true,
+  "retired_admin_rejected": 401,
+  "retired_bearer_rejected": 401,
+  "retired_PIN_header_rejected": 401,
+  "new_admin_secure_session_works": true,
+  "unsafe_delivery_paused": true,
+  "credential_file_mode": "0o600",
+  "public_js_paths": [
+    "/assets/index-DVhS-xwM.js"
+  ]
+}

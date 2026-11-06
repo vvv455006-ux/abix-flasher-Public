@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ABI FLASHER — Ninebot G3/F3 Nur-Lese-Diagnose</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #070707;
+        --panel: #101010;
+        --line: #262626;
+        --text: #f5f5f5;
+        --muted: #9a9a9a;
+        --ok: #f5f5f5;
+        --warn: #9a9a9a;
+        --bad: #ffffff;
+        --accent: #f5f5f5;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        padding: 24px;
+        background: var(--bg);
+        color: var(--text);
+        font: 14px/1.55 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      }
+      h1 { font-size: 18px; margin: 0 0 4px; }
+      h2 { font-size: 14px; margin: 24px 0 8px; color: var(--accent); }
+      p.lede { color: var(--muted); margin: 0 0 20px; max-width: 78ch; }
+      .wrap { max-width: 940px; margin: 0 auto; }
+      button {
+        font: inherit;
+        padding: 9px 16px;
+        border-radius: 8px;
+        border: 1px solid var(--line);
+        background: var(--accent);
+        color: #070707;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      button.secondary { background: transparent; color: var(--text); }
+      button:disabled { opacity: 0.45; cursor: not-allowed; }
+      .row { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 16px; }
+      pre {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 14px;
+        overflow: auto;
+        margin: 0;
+        white-space: pre-wrap;
+        word-break: break-word;
+      }
+      .verdict { border-left: 4px solid var(--line); padding: 12px 16px; background: var(--panel); border-radius: 8px; }
+      .verdict.verified { border-color: var(--ok); }
+      .verdict.provisional { border-color: var(--warn); border-left-style: dashed; }
+      .verdict.unknown, .verdict.conflict, .verdict.foreign { border-color: var(--bad); background: #f5f5f5; color: #070707; }
+      .verdict.unknown .note, .verdict.conflict .note, .verdict.foreign .note { color: #404040; }
+      .verdict strong { display: block; font-size: 16px; margin-bottom: 4px; }
+      label { display: block; color: var(--muted); margin: 14px 0 4px; }
+      input { width: 100%; padding: 9px 12px; border-radius: 8px; border: 1px solid var(--line); background: var(--panel); color: var(--text); font: inherit; }
+      .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 16px; }
+      @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }
+      .note { color: var(--muted); font-size: 13px; }
+      ul { margin: 8px 0 0; padding-left: 18px; color: var(--muted); }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>ABI FLASHER — Ninebot G3 / F3 Nur-Lese-Diagnose</h1>
+      <p class="lede">
+        Dieses Werkzeug schreibt nichts auf das Fahrzeug. Es liest nur, was
+        Chrome über BLE sehen kann: Name, GATT-Profil, Advertisement-Daten.
+        Daraus entsteht ein Identitätsurteil — oder ausdrücklich keins.
+      </p>
+
+      <div class="row">
+        <button id="connect">Fahrzeug verbinden</button>
+        <button id="copy" class="secondary" disabled>Bericht kopieren</button>
+      </div>
+
+      <h2>Urteil</h2>
+      <div id="verdict" class="verdict unknown">
+        <strong>Noch keine Messung</strong>
+        <span class="note">Verbinde das Fahrzeug, um zu beginnen.</span>
+      </div>
+
+      <h2>Zweite Quelle (optional, manuell abgelesen)</h2>
+      <p class="note">
+        Wenn du die Werte anderswo ablesen kannst (App, Diagnose, Aufkleber),
+        trag sie hier ein. Nur eintragen, was du tatsächlich gesehen hast —
+        eine erfundene Quelle ist schlimmer als keine.
+      </p>
+      <div class="grid">
+        <div>
+          <label for="serial">Seriennummer (14 Zeichen, z. B. 1CG…)</label>
+          <input id="serial" maxlength="20" placeholder="1CG00000000001" autocomplete="off" />
+        </div>
+        <div>
+          <label for="banner">VCU-Banner (z. B. SCOOTER_VCU_xxG3)</label>
+          <input id="banner" maxlength="40" placeholder="SCOOTER_VCU_xxG3" autocomplete="off" />
+        </div>
+      </div>
+
+      <h2>Rohdaten</h2>
+      <pre id="log">–</pre>
+
+      <h2>Was das Urteil bedeutet</h2>
+      <ul>
+        <li><code>verified</code> — zwei unabhängige Quellen stimmen überein. Erst jetzt ist ein Firmware-Image zuordenbar.</li>
+        <li><code>provisional</code> — nur eine Quelle. Gut für eine Diagnose, nicht für einen Flash.</li>
+        <li><code>conflict</code> — Quellen widersprechen sich. Nicht flashen, nicht „korrigieren“.</li>
+        <li><code>unknown</code> — keine Modell-Evidenz. Das ist ein Ergebnis, kein Fehler.</li>
+        <li><code>foreign</code> — x3-Familie, aber kein G3/F3 (z. B. ZT3, GT3).</li>
+      </ul>
+    </div>
+
+    <script type="module">
+      import { identifyDevice } from "./client/src/services/ninebotModel.js";
+
+      const NINEBOT = "6e400001-0000-0000-006e-696e65626f74";
+      const NUS = "6e400001-b5a3-f393-e0a9-e50e24dcca9e";
+
+      const logEl = document.getElementById("log");
+      const verdictEl = document.getElementById("verdict");
+      const connectBtn = document.getElementById("connect");
+      const copyBtn = document.getElementById("copy");
+      const serialEl = document.getElementById("serial");
+      const bannerEl = document.getElementById("banner");
+
+      const report = { when: new Date().toISOString(), steps: [] };
+
+      function log(line) {
+        report.steps.push(line);
+        logEl.textContent = report.steps.join("\n");
+      }
+
+      function hex(view) {
+        const bytes = new Uint8Array(view.buffer, view.byteOffset, view.byteLength);
+        return [...bytes].map((b) => b.toString(16).padStart(2, "0")).join(" ");
+      }
+
+      const props = (p) =>
+        Object.entries(p ?? {})
+          .filter(([, v]) => v === true)
+          .map(([k]) => k)
+          .join("|") || "none";
+
+      let advertisement = null;
+
+      function render(identity) {
+        const cls = identity.status;
+        const title =
+          identity.status === "verified"
+            ? `${identity.canonicalName} — bestätigt`
+            : identity.status === "provisional"
+              ? `${identity.canonicalName ?? "?"} — nur eine Quelle`
+              : identity.status === "conflict"
+                ? "Widersprüchliche Quellen"
+                : identity.status === "foreign"
+                  ? "Anderes x3-Modell"
+                  : "Keine Modell-Evidenz";
+        verdictEl.className = "verdict " + cls;
+        verdictEl.innerHTML =
+          `<strong>${title}</strong>` +
+          `<div class="note">Status: ${identity.status} · Modell: ${identity.model ?? "—"} · Quellen: ${
+            identity.sources.length ? identity.sources.join(", ") : "keine"
+          }</div>` +
+          (identity.notes?.length
+            ? `<ul>${identity.notes.map((n) => `<li>${n}</li>`).join("")}</ul>`
+            : "");
+      }
+
+      function evaluate() {
+        const identity = identifyDevice({
+          hardwareId: advertisement?.hardwareId ?? undefined,
+          serial: serialEl.value.trim() || undefined,
+          vcuBanner: bannerEl.value.trim() || undefined,
+          bleName: advertisement?.name ?? undefined,
+        });
+        report.identity = identity;
+        render(identity);
+      }
+
+      for (const el of [serialEl, bannerEl])
+        el.addEventListener("input", evaluate);
+
+      connectBtn.addEventListener("click", async () => {
+        connectBtn.disabled = true;
+        logEl.textContent = "";
+        report.steps.length = 0;
+
+        if (!navigator.bluetooth) {
+          log("Kein Web Bluetooth. Desktop-Chrome/Edge oder Android-Chrome nötig; iOS kann es nicht.");
+          connectBtn.disabled = false;
+          return;
+        }
+        if (!globalThis.isSecureContext) {
+          log("Kein sicherer Kontext. Über http://localhost oder https öffnen, nicht über file://.");
+          connectBtn.disabled = false;
+          return;
+        }
+
+        let device;
+        try {
+          device = await navigator.bluetooth.requestDevice({
+            acceptAllDevices: true,
+            optionalServices: [NINEBOT, NUS],
+          });
+        } catch (error) {
+          log(`Auswahl abgebrochen: ${error.message}`);
+          connectBtn.disabled = false;
+          return;
+        }
+
+        report.deviceName = device.name ?? null;
+        log(`Gerät: ${device.name || "(ohne Namen)"}`);
+
+        // ---- Advertisement --------------------------------------------------
+        advertisement = { name: device.name ?? null, hardwareId: null };
+        if (typeof device.watchAdvertisements === "function") {
+          log("Advertisement: warte 5 s …");
+          await new Promise((resolve) => {
+            const timer = setTimeout(done, 5000);
+            function done() {
+              clearTimeout(timer);
+              device.removeEventListener("advertisementreceived", onEvent);
+              resolve();
+            }
+            function onEvent(event) {
+              if (event.name) advertisement.name = event.name;
+              if (event.manufacturerData) {
+                event.manufacturerData.forEach((view, companyId) => {
+                  const bytes = hex(view);
+                  log(
+                    `  Hersteller 0x${companyId.toString(16)} (${companyId}): ${bytes}`,
+                  );
+                  if (companyId === 0x424e && view.byteLength > 0) {
+                    advertisement.hardwareId = new Uint8Array(
+                      view.buffer,
+                      view.byteOffset,
+                      1,
+                    )[0];
+                    log(
+                      `  -> Modellcode-Byte ${advertisement.hardwareId} (258 = MAX G3, 259 = F3)`,
+                    );
+                  }
+                });
+              }
+              if (event.serviceUuids?.length)
+                log(`  Services: ${event.serviceUuids.join(", ")}`);
+              done();
+            }
+            device.addEventListener("advertisementreceived", onEvent);
+            device.watchAdvertisements().catch((e) => {
+              log(`  watchAdvertisements nicht verfügbar: ${e.message}`);
+              done();
+            });
+          });
+        } else {
+          log("Advertisement: von dieser Chrome-Version nicht exponiert.");
+        }
+
+        // ---- GATT -----------------------------------------------------------
+        try {
+          const server = await device.gatt.connect();
+          log("GATT verbunden.");
+          const services = await server.getPrimaryServices();
+          if (services.length === 0) log("Keine Primary Services sichtbar.");
+          for (const service of services) {
+            const known =
+              service.uuid === NINEBOT
+                ? "  <- Ninebot-Custom"
+                : service.uuid === NUS
+                  ? "  <- Stock-NUS"
+                  : "";
+            log(`Service ${service.uuid}${known}`);
+            let characteristics = [];
+            try {
+              characteristics = await service.getCharacteristics();
+            } catch (error) {
+              log(`  (Charakteristiken nicht lesbar: ${error.message})`);
+              continue;
+            }
+            for (const characteristic of characteristics)
+              log(`  Char ${characteristic.uuid}  [${props(characteristic.properties)}]`);
+          }
+          report.gattProfiles = services.map((s) => s.uuid);
+          device.gatt.disconnect();
+          log("Getrennt. Es wurde nichts geschrieben.");
+        } catch (error) {
+          log(`GATT-Fehler: ${error.message}`);
+        }
+
+        evaluate();
+        copyBtn.disabled = false;
+        connectBtn.disabled = false;
+      });
+
+      copyBtn.addEventListener("click", async () => {
+        await navigator.clipboard.writeText(JSON.stringify(report, null, 2));
+        copyBtn.textContent = "Kopiert";
+        setTimeout(() => (copyBtn.textContent = "Bericht kopieren"), 1500);
+      });
+    </script>
+  </body>
+</html>

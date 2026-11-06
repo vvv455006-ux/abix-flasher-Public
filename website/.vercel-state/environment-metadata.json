@@ -1,0 +1,50 @@
+[
+  {
+    "key": "REAL_FLASHING_ENABLED",
+    "type": "encrypted",
+    "target": [
+      "production",
+      "preview"
+    ]
+  },
+  {
+    "key": "HARDWARE_TEST_CONFIRMED",
+    "type": "encrypted",
+    "target": [
+      "production",
+      "preview"
+    ]
+  },
+  {
+    "key": "DATABASE_URL",
+    "type": "encrypted",
+    "target": [
+      "production",
+      "preview"
+    ]
+  },
+  {
+    "key": "ADMIN_CREDENTIAL_HASH",
+    "type": "sensitive",
+    "target": [
+      "production",
+      "preview"
+    ]
+  },
+  {
+    "key": "KEY_SIGNING_SECRET",
+    "type": "sensitive",
+    "target": [
+      "production",
+      "preview"
+    ]
+  },
+  {
+    "key": "SESSION_SIGNING_SECRET",
+    "type": "sensitive",
+    "target": [
+      "production",
+      "preview"
+    ]
+  }
+]

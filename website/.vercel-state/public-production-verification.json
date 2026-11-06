@@ -1,0 +1,11 @@
+{
+  "public_alias_reachable": true,
+  "release": "studio-6",
+  "realFlashingEnabled": false,
+  "security_headers": true,
+  "browser_bundles_match_tested_local_build": {
+    "/assets/index-BSYxkjLS.js": "eaccfa0b2fbd1075b74fd53e2c93c047d89439ffcff790d7c7370b7000324c6a",
+    "/assets/AdminPortal-BZ3LlTip.js": "3084af5048d61607440e78815f39dfc0844f8907438db62664bcb322417fcf0e"
+  },
+  "unauthenticated_preview_protected": true
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "deployment": "dpl_9jTQNfSCLJK4YUPFcSj2NhK9HdNn",
+    "path": "/",
+    "status": 302
+  },
+  {
+    "deployment": "dpl_9jTQNfSCLJK4YUPFcSj2NhK9HdNn",
+    "path": "/api/admin/stats",
+    "status": 302
+  },
+  {
+    "deployment": "dpl_CFAT3kZaoyFjo5DjvxZyBiz4zoV7",
+    "path": "/",
+    "status": 302
+  },
+  {
+    "deployment": "dpl_CFAT3kZaoyFjo5DjvxZyBiz4zoV7",
+    "path": "/api/admin/stats",
+    "status": 302
+  },
+  {
+    "deployment": "dpl_BKXvYtimRHjFa3zSWKEFo5N5mTs3",
+    "path": "/",
+    "status": 302
+  },
+  {
+    "deployment": "dpl_BKXvYtimRHjFa3zSWKEFo5N5mTs3",
+    "path": "/api/admin/stats",
+    "status": 302
+  }
+]

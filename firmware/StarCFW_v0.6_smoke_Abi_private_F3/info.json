@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "firmware": {
+    "displayName": "StarCFW_v0.6_smoke_Abi_private_F3",
+    "model": "f3",
+    "enforceModel": true,
+    "type": "BLE",
+    "compatible": [
+      "f3_BLE"
+    ],
+    "encryption": "encrypted",
+    "md5": {
+      "enc": "33d77be8ef464ab054dddaf2bf27bc5c"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "firmware": {
+    "displayName": "StarCFW_v0.6_smoke_Abi_private_G3",
+    "model": "g3",
+    "enforceModel": true,
+    "type": "BLE",
+    "compatible": [
+      "g3_BLE"
+    ],
+    "encryption": "encrypted",
+    "md5": {
+      "enc": "79815dd4f14603f03769054d6d23fb27"
+    }
+  }
+}

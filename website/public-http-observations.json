@@ -1,0 +1,56 @@
+[
+  {
+    "url": "https://abix-ninebot-flasher.vercel.app/",
+    "final_url": "https://abix-ninebot-flasher.vercel.app/",
+    "status": 200,
+    "headers": {
+      "content-type": "text/html; charset=utf-8",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-security-policy": null,
+      "x-frame-options": null,
+      "x-content-type-options": null,
+      "referrer-policy": null,
+      "permissions-policy": null,
+      "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+      "access-control-allow-origin": "*"
+    },
+    "bytes_read": 456,
+    "title": "client"
+  },
+  {
+    "url": "https://abix-ninebot-flasher.vercel.app/api/firmwares",
+    "final_url": "https://abix-ninebot-flasher.vercel.app/api/firmwares",
+    "status": 200,
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "cache-control": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0, private",
+      "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; frame-ancestors 'none'; object-src 'none'; base-uri 'self';",
+      "x-frame-options": "DENY",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "permissions-policy": "geolocation=(), camera=(), microphone=(), payment=()",
+      "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+      "access-control-allow-origin": "*"
+    },
+    "bytes_read": 771,
+    "title": []
+  },
+  {
+    "url": "https://vexora.printspace.at/",
+    "final_url": "https://vexora.printspace.at/",
+    "status": 200,
+    "headers": {
+      "content-type": "text/html; charset=utf-8",
+      "cache-control": "no-cache",
+      "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://partner.googleadservices.com https://tpc.googlesyndication.com https://www.googletagservices.com https://adservice.google.com https://*.googlesyndication.com https://*.googleadservices.com https://*.google.com https://*.gstatic.com https://*.doubleclick.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.google.com https://*.doubleclick.net https://*.g.doubleclick.net https://*.googleadservices.com https://*.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.adtrafficquality.google; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'none'",
+      "x-frame-options": "DENY",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "no-referrer",
+      "permissions-policy": "bluetooth=(self), geolocation=(), camera=(), microphone=(), payment=(), usb=(), serial=(), hid=(), interest-cohort=()",
+      "strict-transport-security": null,
+      "access-control-allow-origin": null
+    },
+    "bytes_read": 67911,
+    "title": "OPENX3 \u2014 Custom Firmware f\u00fcr deinen G3 & F3 Pro"
+  }
+]
