@@ -3,7 +3,7 @@
 # Build command: npm install --prefix client && npm run build
 # Output directory: client/dist
 
-name = "abix-flasher"
+name = "abix-flasher-public"
 compatibility_date = "2026-11-06"
 
 [assets]
