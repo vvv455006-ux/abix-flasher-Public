@@ -1,0 +1,11 @@
+# Abix Flasher – Cloudflare Worker (statische Seite)
+# Root-Verzeichnis in Cloudflare: website
+# Build command: npm install --prefix client && npm run build
+# Output directory: client/dist
+
+name = "abix-flasher"
+compatibility_date = "2026-11-06"
+
+[assets]
+directory = "./client/dist"
+not_found_handling = "single-page-application"
