@@ -184,6 +184,8 @@ export class NinebotBleService {
    * Service discovery has to tolerate both UUID sets and both notify
    * characteristics. Failure here names what was found, because "connects but
    * never replies" is otherwise indistinguishable from a wrong image.
+   * When both profiles answer, the Ninebot service wins (PROFILES is
+   * ordered newest first); NUS is only the fallback.
    */
   async _resolveCharacteristics() {
     const found = [];
@@ -226,11 +228,13 @@ export class NinebotBleService {
       throw new Error(
         "No writable Ninebot/NUS UART service on this device. The vehicle is probably not this module, or it is a firmware generation this profile does not address.",
       );
-    if (found.length > 1)
-      throw new Error(
-        "Device exposes more than one UART service; refusing to guess which one is the protocol channel.",
-      );
 
+    // Both profiles answered: some firmware generations expose the Ninebot
+    // service and stock NUS side by side. PROFILES is ordered newest first,
+    // so the Ninebot service wins deterministically and NUS stays the
+    // fallback when it is the only service. This is a fixed preference,
+    // not a guess, so a device exposing both no longer blocks the
+    // connection.
     const chosen = found[0];
     this.profileKind = chosen.name;
     this.writeChar = chosen.writeChar;
