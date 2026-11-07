@@ -26,7 +26,7 @@
  */
 
 export const PUBLIC_KEY_SPKI =
-  "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEYnWktIQ3In7xJhGxnTtUtE/2wrc/EArSiUtKwg/FxjDDiOKKZ3alqXV4k+cxFpdmt0Tw+N7ZmCov4CLUtUu2xA==";
+  "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEjvJwAU9DMwtgzH7Rs4nFec2yqo0WSfgqi0T05yak9YMPFWg1JSWj3UJxV2bVJQq5wrXCXv4ISIcCVK3lP6kpCg==";
 
 export const KEY_PREFIX = "ABI1.";
 export const KEY_VERSION = 1;
